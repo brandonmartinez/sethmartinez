@@ -1,8 +1,8 @@
 {
-  "name": "reserved-domain-placeholder",
+  "name": "sethmartinez",
   "version": "1.0.0",
   "private": true,
-  "description": "Single-page holding site for {{FULL_NAME}} — www.{{DOMAIN}}",
+  "description": "Single-page holding site for Seth Martinez — www.sethmartinez.com",
   "license": "MIT",
   "scripts": {
     "css": "tailwindcss -i ./styles/tailwind.css -o ./src/styles.css",

@@ -2,8 +2,8 @@
 
 ## What this is
 
-A **single-page holding site** for <https://www.{{DOMAIN}}> — a domain reserved for
-{{FULL_NAME}}. The page says the domain is reserved and nothing else. That is the whole
+A **single-page holding site** for <https://www.sethmartinez.com> — a domain reserved for
+Seth Martinez. The page says the domain is reserved and nothing else. That is the whole
 product.
 
 It is deliberately, permanently small. If you find yourself adding a section, a nav, a
@@ -71,7 +71,7 @@ Deleting or editing it unbinds the domain. Leave it alone.
 
 ## URLs
 
-`www.{{DOMAIN}}` is canonical; the apex redirects to it. Every absolute URL — canonical
+`www.sethmartinez.com` is canonical; the apex redirects to it. Every absolute URL — canonical
 and `og:*` — uses the `www` form and `https://`. See the vault note `Domains & DNS`.
 
 ## This repo has siblings
