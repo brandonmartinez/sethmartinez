@@ -1,0 +1,3 @@
+# Nothing here is meant to be indexed — this page holds a name, not content.
+User-agent: *
+Disallow: /

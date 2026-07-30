@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* Tailwind v4: the entry point lives outside src/ so it never ships. Point the
+   scanner at the files that actually contain classes. */
+@source "../src/**/*.html";
+
+@theme {
+  /* Warm, quiet paper — deliberately neutral. These pages belong to whoever
+     the domain is reserved for, so nothing here should read as a brand. */
+  --color-paper: #f7f5f1;
+  --color-card: #fffefb;
+  --color-ink: #1c1a17;
+  --color-ink-soft: #56504a;
+  --color-ink-faint: #8b8377;
+  --color-rule: #e4ded4;
+
+  --font-display:
+    "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia,
+    ui-serif, serif;
+  --font-sans:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+
+  --shadow-card: 0 1px 2px rgb(28 26 23 / 0.04), 0 12px 32px -12px rgb(28 26 23 / 0.1);
+}
+
+@layer base {
+  /* A barely-there wash so the card reads as sitting on the page rather than
+     dissolving into it. Static, no animation, no JS. */
+  body {
+    background-image: radial-gradient(
+      ellipse 90% 60% at 50% 0%,
+      #fffefb 0%,
+      transparent 70%
+    );
+  }
+}
+
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-ink-faint);
+}
