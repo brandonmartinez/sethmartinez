@@ -23,13 +23,13 @@ npm run dev
 ```
 
 `npm run dev` starts the Tailwind CLI in watch mode alongside a static server with live
-reload at <http://localhost:3000>.
+reload at <http://localhost:4173>.
 
 ## Scripts
 
 | Script          | What it does                                                       |
 | --------------- | ------------------------------------------------------------------ |
-| `npm run dev`   | Watch CSS + serve `src/` with live reload on port 3000             |
+| `npm run dev`   | Watch CSS + serve `src/` with live reload on port 4173             |
 | `npm run build` | Compile minified CSS, then assemble `_site/` (the deploy artifact) |
 | `npm run clean` | Remove `_site/` and the generated `src/styles.css`                 |
 

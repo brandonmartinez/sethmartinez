@@ -28,9 +28,14 @@ Three dev dependencies, total:
 | ------------------ | ------------------------- |
 | `@tailwindcss/cli` | compiles the CSS          |
 | `concurrently`     | runs the two dev watchers |
-| `browser-sync`     | local dev server + reload |
+| `vite`             | local dev server + reload |
 
-There are no runtime dependencies and there never should be.
+There are no runtime dependencies and there never should be. **Vite is a dev
+server only** — it never touches the build, which stays `cp -R src/. _site/`.
+It replaced `browser-sync` on 2026-07-31 because that package's frozen
+transitive tree (`immutable@3.8.3`, `minimatch@3.x`) carried unfixable
+high-severity advisories. `npm audit` should report zero vulnerabilities; if it
+ever doesn't, fix it rather than muting it.
 
 ## Layout rule
 
@@ -88,7 +93,7 @@ site rather than a tweak to this one.
 
 ```sh
 npm ci        # install
-npm run dev   # http://localhost:3000, rebuilds CSS and reloads on save
+npm run dev   # http://localhost:4173, rebuilds CSS and reloads on save
 npm run build # produces _site/
 npm run clean # removes _site/ and src/styles.css
 ```
